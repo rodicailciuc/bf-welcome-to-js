@@ -23,3 +23,41 @@
       '0 . x . 0'         -> '0 . X . 0'
 
 */
+let text = '';
+
+while (true) {
+  const input = prompt('enter some text, the letters will be bouncified');
+
+  if (input === null) {
+    alert('there is no escape!');
+  }
+
+  if (input === '') {
+    alert('no empty input, try again.');
+  }
+
+  if (input) {
+    text = input;
+    break;
+  }
+}
+
+// const specials = ' !@#$%^&*()_-+=1234567890';
+
+let newText = '';
+let isUpperCase = true;
+
+for (const char of text) {
+  if (/[a-zA-Z]/.test(char)) {
+    if (isUpperCase) {
+      newText += char.toUpperCase();
+    } else {
+      newText += char.toLowerCase();
+    }
+    isUpperCase = !isUpperCase;
+  } else {
+    newText += char;
+  }
+}
+
+alert(newText);
