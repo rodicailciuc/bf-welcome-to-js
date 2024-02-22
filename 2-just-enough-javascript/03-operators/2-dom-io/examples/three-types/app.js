@@ -21,9 +21,9 @@ whenFormDataChanges('values', () => {
 
   // --- find the types of each value ---
 
-  let strType = typeof strValue;
-  let numType = typeof numValue;
-  let boolType = typeof boolValue;
+  let strType = typeof strValue; //string
+  let numType = typeof numValue; //number
+  let boolType = typeof boolValue; // boolean
 
   console.log(strType, numType, boolType);
 
