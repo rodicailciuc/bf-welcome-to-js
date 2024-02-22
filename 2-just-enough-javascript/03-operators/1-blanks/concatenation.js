@@ -9,16 +9,24 @@ console.log('--- find 3 ways to log "hello" ---');
 console.log('hello');
 console.log('h' + 'ello');
 // exercises
-console.log();
-console.log();
-console.log();
+const greeting = 'hello';
+console.log(greeting);
+const nam1 = 'he';
+const nam2 = 'llo';
+console.log(nam1 + nam2);
+let input1 = prompt('type hello');
+console.log(input1);
 
 console.log('--- find 4 ways to log "good bye" ---');
 // examples
 console.log('good bye');
 console.log('good' + ' ' + 'bye');
 // exercises
-console.log();
-console.log();
-console.log();
-console.log();
+const greetings = 'good bye';
+console.log(greetings);
+const greet = 'good';
+const greets = 'bye';
+console.log(greet + greets);
+console.log('good ' + 'bye');
+let input = prompt('type good bye');
+console.log(input);
