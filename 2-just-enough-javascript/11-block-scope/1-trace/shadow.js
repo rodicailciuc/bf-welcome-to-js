@@ -4,10 +4,8 @@
 
 let greeting = 'hello';
 
-{
-  let greeting = 'hello';
-  greeting = 'bye';
-  console.log(greeting);
-}
+let greetings = 'hello';
+greetings = 'bye';
+console.log(greetings);
 
 console.log(greeting === 'hello'); // true

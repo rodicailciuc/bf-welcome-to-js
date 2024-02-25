@@ -1,35 +1,18 @@
+'use strict';
+
 // #todo
 
 // prettier-ignore
-{ // so prettier does not remove the extra spacing
-
-
-'use strict';
-
+// so prettier does not remove the extra spacing
 
 let phrase = '';
 
+let word = 'hello';
 
-{
+phrase = phrase + word;
 
-    let word = 'hello';
+let worde = 'world';
 
-
-    phrase = phrase + word;
-
-}
-
-{
-
-    let word = 'world';
-
-
-    phrase = phrase + ' ' + word;
-
-}
-
+phrase = phrase + ' ' + worde;
 
 console.log(phrase === 'hello world');
-
-
-}
