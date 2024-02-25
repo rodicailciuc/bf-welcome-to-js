@@ -4,14 +4,10 @@
 
 let phrase = '';
 
-{
-  let word = 'hello';
-  phrase = phrase + word;
-}
+let word = 'hello';
+phrase = phrase + word;
 
-{
-  let word = 'world';
-  phrase = phrase + ' ' + word;
-}
+let worde = 'world';
+phrase = phrase + ' ' + worde;
 
 console.log(phrase === 'hello world'); // true

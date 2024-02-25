@@ -15,9 +15,9 @@ console.log(greeting === 'hello'); // true
 /* distractors:
 
 
-    Log
+Log
 
-  Console
+Console
 
 
 
