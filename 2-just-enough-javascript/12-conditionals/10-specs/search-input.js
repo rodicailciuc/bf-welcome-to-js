@@ -37,17 +37,47 @@ console.log('--- begin program ---');
 
 /* --- gather user input --- */
 
-let text = prompt(_);
+let text = prompt('enter a text');
 console.log('text:', text);
 
-let query = prompt(_);
+let query = prompt('enter a query');
 console.log('query:', query);
 
 /* --- declare initial output --- */
 
-let output = _;
+let output = '';
 
 /* --- create final output --- */
+
+const isSad =
+  (text === null && query === null) ||
+  (text === null && query === '') ||
+  (text === '' && query === null);
+const bothEmpty = text === '' && query === '';
+const oneIsEmpty = (text === '' && query) || (text && query === '');
+const oneIsNull = (text === null && query) || (text && query === null);
+let isIncludesQuery;
+if (text && query) {
+  isIncludesQuery = text.toLowerCase().includes(query.toLowerCase());
+}
+
+if (isSad) {
+  output = ':(';
+} else if (bothEmpty) {
+  output = '"" includes ""';
+} else if (oneIsEmpty) {
+  if (text) {
+    output = `"${text}" does include ""`;
+  } else {
+    output = `"" does include "${query}"`;
+  }
+} else if (oneIsNull) {
+  output = ':(';
+} else if (isIncludesQuery) {
+  output = `"${text}" does include "${query}"`;
+} else {
+  output = `"${text}" does not include "${query}"`;
+}
 
 /* --- alert the result --- */
 

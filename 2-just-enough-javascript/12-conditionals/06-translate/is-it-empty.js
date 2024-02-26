@@ -15,13 +15,10 @@
 
 /* ---   ?   --- */
 
-// input <- prompt('do whatever you want')
-
 /* ---   ?   --- */
 
-// message <- 'your input is '
+// let message = 'your input is';
 
-// IF: input === null
 /* ---   ?   --- */
 //   message <- message + 'null'
 // ELSE:
@@ -37,3 +34,20 @@
 /* ---   ?   --- */
 
 // alert(message)
+
+const input = prompt('do whatever you want');
+
+let message = '';
+
+if (input === null) {
+  message = 'you click cancel';
+} else {
+  let maybenot = confirm('is this what you want to write\n ' + input);
+  if (maybenot === false) {
+    message = 'try again';
+  } else {
+    message = 'Great! thank you';
+  }
+}
+
+alert(message);

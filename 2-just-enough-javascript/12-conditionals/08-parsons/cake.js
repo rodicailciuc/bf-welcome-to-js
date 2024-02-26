@@ -25,7 +25,7 @@ alert(message);
 
 // --- distractors ---
 
-} // distractor
-{ // distractor
-] else [ // distractor
-if likesCake === true: // distractor
+// distractor
+// distractor
+// ] else [ // distractor
+// if likesCake === true: // distractor
