@@ -2,7 +2,7 @@
 
 'use strict';
 
-let word = 'racecar';
+let word = 'bike';
 // let word = 'bike';
 // let word = 'f';
 // let word = ' i o u ';
